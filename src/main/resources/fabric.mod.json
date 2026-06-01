@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "ghostblock",
+  "version": "${version}",
+  "name": "Ghost Block Fix",
+  "description": "Suppresses server correction jitter and rotation snapping on ghost blocks",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.ghostblock.GhostBlockMod"
+    ]
+  },
+  "mixins": [
+    "ghostblock.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "icon": "icon.png"
+}
